@@ -1,7 +1,7 @@
 {% test positive_value(model, column_name) %}
 SELECT
-* FROM
+    *
+FROM
     {{ model }}
 WHERE
-    {{ column_name}} < 1
-{% endtest %}
+    {{ column_name }} < 1 {% endtest %}
